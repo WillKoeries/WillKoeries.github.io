@@ -1,66 +1,70 @@
-# WILL KOERIES
+# 👨‍💻 WILL KOERIES
 
-**Email:** 240160711@mycput.ac.za  
-**Phone:** +27824375292  
-**Location:** Cape Town, Kensington  
-**GitHub:** github.com/WillKoeries
+**📧** 240160711@mycput.ac.za | **📱** +27824375292 | **📍** Cape Town, Kensington  
+**🐙** [github.com/WillKoeries](https://github.com/WillKoeries)
 
 ---
 
-## PROFILE
+## 🎯 PROFILE
 
-Dedicated third-year ICT student specializing in Application Development with hands-on experience with Java, Python and JavaScript. Strong foundation in object-oriented programming, system design and web development principles. Demonstrated ability to apply problem solving skills, implement clean code practice and work collaboratively in team-based development environments.
+&gt; *Dedicated third-year ICT student specializing in **Application Development** with hands-on experience in **Java**, **Python**, and **JavaScript**.*
 
----
-
-## EDUCATION
-
-**Ceres Secondary School**  
-National Senior Certificate (NCS) | Completed 2023
-
-**Cape Peninsula University of Technology**  
-Diploma in Information and Communication Technology (Application Development) | 2024–Present
+I bring a strong foundation in **object-oriented programming**, **system design**, and **web development** principles. I demonstrate proven ability to apply **problem-solving skills**, implement **clean code practices**, and work **collaboratively** in team-based development environments.
 
 ---
 
-## TECHNICAL SKILLS
+## 🎓 EDUCATION
 
-### Programming Languages
-- **Java** – Object-oriented programming language for building structured applications
-- **Python** – High-level scripting language for general-purpose programming
-- **JavaScript** – Programming language for dynamic and interactive web content
-- **HTML** – Markup language for structuring web pages
-- **SQL** – Language for managing and querying databases
-- **CSS** – Style sheet language for designing and formatting web pages
+| 🏫 Institution | 📜 Qualification | 📅 Year |
+|:--|:--|:--|
+| **Cape Peninsula University of Technology** | Diploma in ICT (Application Development) | 2024 – Present |
+| **Ceres Secondary School** | National Senior Certificate (NCS) | 2023 |
 
 ---
 
-## ACADEMIC PROJECTS
+## 🛠️ TECHNICAL SKILLS
 
-### Student Management System
-- Designed and developed a structured Java application using OOP principles
-- Implemented the Builder Pattern for object creation
+| Language | Description |
+|:---------|:------------|
+| **Java** | Object-oriented programming for structured applications |
+| **Python** | High-level scripting for general-purpose programming |
+| **JavaScript** | Dynamic and interactive web content |
+| **HTML** | Structuring web pages |
+| **SQL** | Managing and querying databases |
+| **CSS** | Designing and formatting web pages |
+
+---
+
+## 💼 ACADEMIC PROJECTS
+
+### 📊 Student Management System
+- Designed and developed structured Java application using OOP principles
+- Implemented Builder Pattern for object creation
 - Applied clean package structure and validation logic
 - **Technologies:** Java, JDBC, MySQL
 
-### Enterprise Application Project
+### 🏢 Enterprise Application Project
 - Contributed to system analysis and design documentation
-- Worked collaboratively in a team-based development environment
+- Worked collaboratively in team-based development environment
 - **Technologies:** Java, UML, MySQL
 
-### Automated University Timetable Organizer
-- Contributed to the development and design of a timetable management system
-- Assisted in modeling systems requirements and class relationships
-- Participated in planning task allocation and structured project documentation
+### 📅 Automated University Timetable Organizer
+- Contributed to development and design of timetable management system
+- Assisted in modeling system requirements and class relationships
+- Participated in planning task allocation and project documentation
 - **Technologies:** HTML, JavaScript, CSS
 
-### Campus Companion
-- Developed the login and signup pages for the application
+### 🎓 Campus Companion
+- Developed login and signup pages for the application
 - Implemented features for content management and retrieval
 - **Technologies:** JavaFX, JDBC, MySQL
 
 ---
 
-## REFERENCES
+## 📞 REFERENCES
 
-References upon request
+*References available upon request*
+
+---
+
+**Thank you for visiting my portfolio!** 🚀
