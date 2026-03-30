@@ -1,4 +1,3 @@
-# WillKoeries.github.io
 # WILL KOERIES
 
 **Email:** 240160711@mycput.ac.za  
