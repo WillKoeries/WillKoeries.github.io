@@ -1,0 +1,1563 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+          content="VendorLink Agile team portfolio with reflection spaces for Will Koeries.">
+    <title>VendorLink | Portfolio for Will Koeries</title>
+    <style>
+        :root {
+            --navy: #1E3A8A;
+            --blue: #2563EB;
+            --teal: #22C55E;
+            --ink: #0F172A;
+            --muted: #475569;
+            --line: #CBD5E1;
+            --paper: #fff;
+            --bg: #F8FAFC;
+            --pale: #EFF6FF;
+            --gold: #22C55E
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--ink);
+            font: 16px/1.65 "Century Gothic", "Trebuchet MS", Arial, sans-serif
+        }
+
+        a {
+            color: var(--blue)
+        }
+
+        a:hover {
+            color: var(--navy)
+        }
+
+        a:focus-visible {
+            outline: 3px solid #2563EB;
+            outline-offset: 3px
+        }
+
+        .skip-link {
+            position: absolute;
+            left: 12px;
+            top: -60px;
+            z-index: 10;
+            background: #fff;
+            color: #172b45;
+            padding: 10px 14px;
+            border-radius: 4px
+        }
+
+        .skip-link:focus {
+            top: 12px
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 5;
+            background: #fff;
+            color: var(--navy);
+            border-bottom: 3px solid var(--teal)
+        }
+
+        .nav {
+            max-width: 1150px;
+            margin: auto;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 18px
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px 14px
+        }
+
+        nav a {
+            color: var(--navy);
+            text-decoration: none;
+            font-size: .86rem
+        }
+
+        .hero {
+            background: var(--navy);
+            color: #fff;
+            padding: 62px 22px
+        }
+
+        .hero-inner {
+            max-width: 1080px;
+            margin: auto
+        }
+
+        .eyebrow {
+            text-transform: uppercase;
+            letter-spacing: .15em;
+            font-size: .78rem;
+            font-weight: 750;
+            color: #c8e4e9
+        }
+
+        h1 {
+            font-size: clamp(2.4rem, 5vw, 4rem);
+            line-height: 1.1;
+            letter-spacing: -.035em;
+            margin: 12px 0
+        }
+
+        .hero p {
+            max-width: 780px;
+            color: #e2edf4;
+            font-size: 1.1rem
+        }
+
+        .links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin: 22px 0
+        }
+
+        .links a {
+            border: 1px solid #c5dce5;
+            border-radius: 7px;
+            padding: 9px 14px;
+            color: white;
+            text-decoration: none;
+            font-weight: 700
+        }
+
+        .links a:first-child {
+            background: white;
+            color: var(--navy)
+        }
+
+        .meta {
+            display: grid;
+            grid-template-columns:repeat(4, minmax(0, 1fr));
+            gap: 10px;
+            margin-top: 25px
+        }
+
+        .meta div {
+            padding: 12px;
+            background: #ffffff12;
+            border: 1px solid #ffffff2e;
+            border-radius: 8px
+        }
+
+        .meta small {
+            display: block;
+            color: #d2e2eb;
+            text-transform: uppercase;
+            font-size: .7rem;
+            letter-spacing: .08em
+        }
+
+        .meta strong {
+            display: block;
+            font-size: .93rem
+        }
+
+        main {
+            max-width: 1080px;
+            margin: auto;
+            padding: 24px 20px 60px
+        }
+
+        .notice {
+            background: var(--pale);
+            border-left: 4px solid var(--blue);
+            padding: 14px 17px;
+            border-radius: 7px;
+            margin: 4px 0 22px
+        }
+
+        .section {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: clamp(20px, 3vw, 32px);
+            margin: 22px 0;
+            box-shadow: 0 7px 22px #172b450c
+        }
+
+        .heading {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 18px;
+            align-items: flex-start
+        }
+
+        .num {
+            flex: 0 0 42px;
+            height: 42px;
+            display: grid;
+            place-items: center;
+            background: var(--pale);
+            color: var(--blue);
+            font-weight: 850;
+            border-radius: 9px
+        }
+
+        h2 {
+            color: var(--navy);
+            font-size: clamp(1.4rem, 3vw, 1.9rem);
+            line-height: 1.25;
+            margin: 0 0 5px
+        }
+
+        h3 {
+            font-size: 1.12rem;
+            color: var(--blue);
+            margin: 24px 0 7px
+        }
+
+        h4 {
+            margin: 0 0 7px;
+            color: var(--navy)
+        }
+
+        .sub {
+            margin: 0;
+            color: var(--muted)
+        }
+
+        p {
+            margin: 8px 0 13px
+        }
+
+        ul, ol {
+            padding-left: 24px
+        }
+
+        li {
+            margin: 5px 0
+        }
+
+        .tag {
+            display: inline-block;
+            border-radius: 30px;
+            background: #DCFCE7;
+            color: #166534;
+            font-size: .76rem;
+            font-weight: 750;
+            padding: 3px 9px
+        }
+
+        .planned {
+            background: var(--pale);
+            color: var(--navy)
+        }
+
+        .callout {
+            background: var(--pale);
+            padding: 13px 16px;
+            border-radius: 8px;
+            margin: 14px 0
+        }
+
+        .reflection, .evidence {
+            background: #fff;
+            border: 1px dashed #aebbc7;
+            border-radius: 8px;
+            padding: 14px 16px;
+            margin-top: 14px
+        }
+
+        .reflection {
+            border-left: 4px solid var(--teal)
+        }
+
+        .reflection-space {
+            min-height: 140px
+        }
+
+        .evidence {
+            border-left: 4px solid var(--blue)
+        }
+
+        .evidence-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+            margin-top: 20px
+        }
+
+        .evidence-shot {
+            margin: 0;
+            padding: 12px;
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 8px
+        }
+
+        .evidence-shot img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 5px
+        }
+
+        .evidence-shot figcaption {
+            margin-top: 10px;
+            color: var(--muted);
+            font-size: .9rem
+        }
+
+        .tablewrap {
+            overflow-x: auto
+        }
+
+        .image-viewer {
+            width: min(96vw, 1600px);
+            max-width: none;
+            max-height: 96dvh;
+            padding: 14px;
+            color: #fff;
+            background: #0F172A;
+            border: 1px solid #475569;
+            border-radius: 12px
+        }
+
+        .image-viewer::backdrop {
+            background: rgb(2 6 23 / 88%)
+        }
+
+        .viewer-toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 12px
+        }
+
+        .viewer-toolbar p { margin: 0; color: #CBD5E1 }
+
+        .viewer-stage {
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr) auto;
+            align-items: center;
+            gap: 12px
+        }
+
+        .viewer-stage figure { margin: 0; text-align: center; min-width: 0 }
+
+        .viewer-stage img {
+            display: block;
+            max-width: 100%;
+            max-height: calc(96dvh - 130px);
+            width: auto;
+            height: auto;
+            margin: auto;
+            object-fit: contain
+        }
+
+        .viewer-stage figcaption {
+            padding: 10px 4px 2px;
+            color: #E2E8F0
+        }
+
+        .viewer-button {
+            min-height: 42px;
+            padding: 8px 12px;
+            color: #fff;
+            background: #1E3A8A;
+            border: 1px solid #64748B;
+            border-radius: 6px;
+            font: inherit;
+            cursor: pointer
+        }
+
+        .viewer-button:hover { background: #2563EB }
+
+        .viewer-button:focus-visible {
+            outline: 3px solid #22C55E;
+            outline-offset: 3px
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: .92rem;
+            margin: 12px 0 18px
+        }
+
+        th, td {
+            border: 1px solid var(--line);
+            padding: 9px 11px;
+            text-align: left;
+            vertical-align: top
+        }
+
+        th {
+            background: var(--pale);
+            color: var(--navy)
+        }
+
+        tr:nth-child(even) td {
+            background: #fafbfd
+        }
+
+        .small {
+            font-size: .89rem;
+            color: var(--muted)
+        }
+
+        .two {
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            gap: 14px
+        }
+
+        .card {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 14px
+        }
+
+        .card h3 {
+            margin-top: 0
+        }
+
+        .checklist {
+            list-style: none;
+            padding: 0
+        }
+
+        .checklist li {
+            position: relative;
+            padding-left: 28px
+        }
+
+        .checklist li:before {
+            content: "□";
+            position: absolute;
+            left: 2px;
+            color: var(--blue);
+            font-size: 1.2rem
+        }
+
+        .footer {
+            text-align: center;
+            color: var(--muted);
+            padding: 24px;
+            font-size: .9rem
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto
+            }
+        }
+
+        @media (max-width: 760px) {
+            .nav {
+                align-items: center;
+                flex-direction: column
+            }
+
+            .meta {
+                grid-template-columns:1fr 1fr
+            }
+
+            .two {
+                grid-template-columns:1fr
+            }
+
+            .evidence-gallery {
+                grid-template-columns: 1fr
+            }
+
+            .image-viewer {
+                width: 96vw;
+                padding: 10px
+            }
+
+            .viewer-stage {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px
+            }
+
+            .viewer-stage figure {
+                grid-column: 1 / -1;
+                grid-row: 1
+            }
+
+            #viewer-previous { grid-column: 1; grid-row: 2 }
+            #viewer-next { grid-column: 2; grid-row: 2 }
+
+            .viewer-stage img {
+                max-height: calc(96dvh - 170px)
+            }
+
+            .hero {
+                padding: 44px 20px
+            }
+        }
+
+        @media print {
+            header, .links {
+                display: none
+            }
+
+            .hero {
+                background: white;
+                color: var(--navy);
+                padding: 20px 0
+            }
+
+            .hero p, .eyebrow, .meta small {
+                color: var(--ink)
+            }
+
+            .meta div {
+                background: white;
+                border-color: var(--line)
+            }
+
+            main {
+                padding: 0
+            }
+
+            .section {
+                box-shadow: none;
+                break-inside: avoid
+            }
+        }
+    </style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+    <div class="nav">
+        <nav aria-label="Main navigation"><a href="#overview">Overview</a><a href="#charter">Team</a><a href="#stories">Stories</a><a
+                href="#backlog">Backlog</a><a href="#sprint">Sprint</a><a href="#testing">Testing</a><a href="#logbook">Logbook</a><a
+                href="#reflection">Reflection</a></nav>
+    </div>
+</header>
+<section class="hero">
+    <div class="hero-inner">
+        <div class="eyebrow">PRP370 · Assessment 2 · GitHub Portfolio</div>
+        <h1>VendorLink</h1>
+        <p>A platform connecting event organisers with vendors through event listings, vendor applications, organiser
+            decisions and post-approval payments.</p>
+        <div class="links">
+            <a href="https://vendorlink-1vla.onrender.com/" target="_blank" rel="noopener">Open live
+                website ↗</a><a href="https://github.com/WillKoeries/VendorLink" target="_blank" rel="noopener">View
+            GitHub
+            repository ↗</a>
+        </div>
+    </div>
+</section>
+<main id="main-content">
+    <section class="section" id="overview">
+        <div class="heading">
+            <div class="num">01</div>
+            <div>
+                <h2>Project Overview</h2>
+                <p class="sub">Purpose, scope and recorded functionality.</p>
+            </div>
+        </div>
+        <h3>01.1 Purpose and problem</h3>
+        <p>The team developed VendorLink after seeing how difficult it was for vendors to find markets, expos and festivals in one place. The project set out to connect vendors and organisers through a shared platform for event listings, applications and decisions.</p>
+        <h3>01.2 Core workflow</h3>
+        <ol>
+            <li>I create an event and add a banner as an organiser.</li>
+            <li>I find an event and apply for a stall as a vendor.</li>
+            <li>I accept or decline an application as an organiser.</li>
+            <li>After approval, I continue to PayFast when a fee applies.</li>
+            <li>I check the payment status after confirmation as an organiser.</li>
+        </ol>
+        <h3>01.3 Technology and links</h3>
+        <ul>
+            <li>Source repository: <a href="https://github.com/WillKoeries/VendorLink" target="_blank"
+                                      rel="noopener noreferrer">VendorLink on GitHub</a>
+            </li>
+            <li>Application URL: <a href="https://vendorlink-1vla.onrender.com/" target="_blank"
+                                    rel="noopener noreferrer">vendorlink-1vla.onrender.com</a>
+            </li>
+            <li>Technology: Java 17, Spring Boot, PostgreSQL/Supabase, HTML, CSS, JavaScript, JWT and PayFast.</li>
+        </ul>
+    </section>
+
+    <section class="section" id="charter">
+        <div class="heading">
+            <div class="num">02</div>
+            <div>
+                <h2>Agile Team Charter</h2>
+                <p class="sub">Roles, collaboration and stakeholder input.</p>
+            </div>
+        </div>
+        <div class="tablewrap">
+            <table>
+                <thead>
+                <tr>
+                    <th>Member</th>
+                    <th>Role</th>
+                    <th>Responsibilities</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Mogamat Wazeer Gilbert</td>
+                    <td>Scrum Master; backend developer</td>
+                    <td>Backend development, database work and integration checks.</td>
+                </tr>
+                <tr>
+                    <td>Will Koeries</td>
+                    <td>Frontend developer</td>
+                    <td>Frontend development; compiled the repository-based Agile Logbook.</td>
+                </tr>
+                <tr>
+                    <td>Both of us</td>
+                    <td>Shared</td>
+                    <td>Testing and collaboration, unless a task had a recorded owner.</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3>02.1 Stakeholder and collaboration</h3>
+        <p>We presented the website idea and business model during Microsoft Teams meetings with the lecturer/WIL
+            co-ordinator. We received verbal advice and a check of whether the application worked, but we did not keep
+            written meeting notes. We used WhatsApp to communicate.</p>
+        <h3>02.2 Working approach</h3>
+        <p>The team reported a one-week sprint duration. No dated sprint plans, reviews or retrospectives were found in the repository history, so this portfolio records repository activity without assigning it to unverified sprint dates.</p>
+        <h3>02.3 Reflection</h3>
+        <div class="reflection reflection-space">
+            <p>Working as a two-person team with clearly separated roles meant that ownership of most tasks was obvious: Wazeer led the backend, database and integration work, while I concentrated on the frontend. This division suited our strengths and allowed us to work in parallel. However, our charter did not define how work would be handed over between the two layers, and this became visible when the frontend and backend had to be connected, with most of that integration effort concentrated around 1 October.</p>
+            <p>Our sessions with the lecturer/WIL co-ordinator gave us useful direction on the business model and confirmed that the application was working. Because we relied on verbal feedback and WhatsApp messages, however, we have no written record of the decisions made. In future I would add three simple agreements to the charter: record meeting outcomes in a shared document, define a “definition of done” that includes integration and testing, and agree on how branches are reviewed and merged.</p>
+        </div>
+    </section>
+
+    <section class="section" id="stories">
+        <div class="heading">
+            <div class="num">03</div>
+            <div>
+                <h2>User Stories and Tasks</h2>
+            </div>
+        </div>
+        <div class="card">
+            <h3>US-01 · Create an event</h3>
+            <p><strong>Story:</strong> As an organiser, I want to create an event so vendors can discover it.</p>
+            <p><strong>Acceptance criteria:</strong> Required details can be entered, valid information is saved, and
+                validation errors are clear.</p>
+            <p><strong>Tasks:</strong> Build event form; validate fields; save event; test valid and invalid
+                submissions.</p>
+        </div>
+        <div class="card">
+            <h3>US-02 · Upload an event banner</h3>
+            <p><strong>Story:</strong> As an organiser, I want to upload a banner so the event listing is recognisable.
+            </p>
+            <p><strong>Acceptance criteria:</strong> An image can be selected and uploaded; successful upload is
+                reflected in the event; errors are handled.</p>
+            <p><strong>Tasks:</strong> Implement upload; connect storage or image URL handling; display image; test
+                supported and invalid uploads.</p>
+        </div>
+        <div class="card">
+            <h3>US-03 · Browse event listings</h3>
+            <p><strong>Story:</strong> As a vendor, I want to browse events so I can find opportunities.</p>
+            <p><strong>Acceptance criteria:</strong> Event information is readable and closed/full events are not
+                presented as open application opportunities.</p>
+            <p><strong>Tasks:</strong> Retrieve events; display cards/details; show availability; test empty and
+                populated results.</p>
+        </div>
+        <div class="card">
+            <h3>US-04 · Apply to an event</h3>
+            <p><strong>Story:</strong> As a vendor, I want to apply to an open event so the organiser can consider me.
+            </p>
+            <p><strong>Acceptance criteria:</strong> Application is recorded for review; closed/full events reject
+                applications; duplicate applications are prevented.</p>
+            <p><strong>Tasks:</strong> Submit application; validate event status and capacity; prevent duplicates;
+                expose application to organiser; test outcomes.</p>
+        </div>
+        <div class="card">
+            <h3>US-05 · Review an application</h3>
+            <p><strong>Story:</strong> As an organiser, I want to accept or decline applications so I can manage
+                participation.</p>
+            <p><strong>Acceptance criteria:</strong> The event owner can review applications; the status updates;
+                unauthorised users cannot decide on another organiser's applications.</p>
+            <p><strong>Tasks:</strong> Build review controls; check ownership; update status; handle capacity; test
+                accept and decline paths.</p>
+        </div>
+        <div class="card">
+            <h3>US-06 · Pay after acceptance</h3>
+            <p><strong>Story:</strong> As an accepted vendor, I want to pay the stall fee so my registration can be
+                completed.</p>
+            <p><strong>Acceptance criteria:</strong> Payment is offered after approval when a fee is due; amount is
+                correct; opening checkout alone does not mark an application paid.</p>
+            <p><strong>Tasks:</strong> Connect approval to checkout; pass amount/reference; handle cancelled or failed
+                checkout; test payment initiation.</p>
+        </div>
+        <div class="card">
+            <h3>US-07 · Confirm payment status</h3>
+            <p><strong>Story:</strong> As an organiser, I want to see whether a vendor has paid so event participation
+                can be managed accurately.</p>
+            <p><strong>Acceptance criteria:</strong> Confirmed successful payment updates the status; failed/cancelled
+                payment is not shown as paid; organiser can view status.</p>
+            <p><strong>Tasks:</strong> Handle payment confirmation; validate notifications; update stored status;
+                display status; test success/failure.</p>
+        </div>
+        <div class="card">
+            <h3>US-08 · View application status</h3>
+            <p><strong>Story:</strong> As a vendor, I want to view my applications so I know whether they are pending,
+                accepted or declined.</p>
+            <p><strong>Acceptance criteria:</strong> Vendor sees their own applications and current status; status
+                reflects the organiser's decision.</p>
+            <p><strong>Tasks:</strong> Retrieve current user's applications; display statuses; verify access
+                restrictions; test updates.</p>
+        </div>
+        <div class="card">
+            <h3>US-09 · Enforce account roles</h3>
+            <p><strong>Story:</strong> As a user, I want role-based access so restricted actions and information are
+                protected.</p>
+            <p><strong>Acceptance criteria:</strong> Protected actions require authentication; vendors cannot perform
+                organiser-only actions; organisers cannot manage events they do not own.</p>
+            <p><strong>Tasks:</strong> Review authentication/authorisation; test role restrictions; inspect error
+                handling and secret exposure.</p>
+        </div>
+        <div class="card">
+            <h3>US-10 · Handle notifications and errors</h3>
+            <p><strong>Story:</strong> As a user, I want clear feedback when an application or payment changes or fails.
+            </p>
+            <p><strong>Acceptance criteria:</strong> Status is clear; relevant notifications appear where supported;
+                errors do not appear as success.</p>
+            <p><strong>Tasks:</strong> Review notifications; check messages; test transitions and failures; document
+                gaps.</p>
+        </div>
+        <div class="card">
+            <h3>US-11 · Respect event capacity</h3>
+            <p><strong>Story:</strong> As an organiser, I want approvals to respect stall capacity so the event is not
+                overbooked.</p>
+            <p><strong>Acceptance criteria:</strong> Available capacity is checked; approval reserves capacity; a full
+                event cannot exceed its limit; capacity release is handled correctly.</p>
+            <p><strong>Tasks:</strong> Review capacity rules; test full events and repeated decisions; check
+                cancellation behaviour.</p>
+        </div>
+        <div class="card">
+            <h3>US-12 · Recover from errors</h3>
+            <p><strong>Story:</strong> As a user, I want clear messages when an action fails so I know what to do next.
+            </p>
+            <p><strong>Acceptance criteria:</strong> Validation/server failures are not treated as success; messages are
+                understandable; failures do not create incorrect application/payment state.</p>
+            <p><strong>Tasks:</strong> Test validation, server/network failures and payment failures; log defects;
+                retest fixes.</p>
+        </div>
+
+        <h3>03.1 Reflection</h3>
+        <div class="reflection reflection-space">
+            <p>Writing the work as user stories helped me think about VendorLink from the perspective of the two people who use it, the organiser and the vendor, rather than as a list of pages to build. As the frontend developer, I found that the stories translated naturally into screens: event creation, event listings, the stall application form, the vendor’s application list and the organiser’s review dialog.</p>
+            <p>The most useful stories were those with specific acceptance criteria. US-06, for example, stated that opening the PayFast checkout must not mark an application as paid, and the final stall-fee flow follows that rule by waiting for PayFast confirmation. Some stories, such as US-10 and US-12 on notifications and error handling, were broader and harder to verify because “clear feedback” is open to interpretation. I would refine these into smaller stories with measurable criteria, estimate them, and link each one to the commits and pull requests that delivered it so that progress could be traced.</p>
+        </div>
+    </section>
+
+    <section class="section" id="backlog">
+        <div class="heading">
+            <div class="num">04</div>
+            <div>
+                <h2>Product Backlog and Recorded Development</h2>
+                <p class="sub">Feature scope reconstructed from repository changes.</p>
+            </div>
+        </div>
+        <div class="tablewrap">
+            <table>
+                <thead>
+                <tr>
+                    <th>Feature area</th>
+                    <th>Recorded development</th>
+                    <th>Period</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Prototype and initial scope</td>
+                    <td>Static pages and README describing the project and planned features.</td>
+                    <td>17 August</td>
+                </tr>
+                <tr>
+                    <td>Backend and database</td>
+                    <td>Spring Boot backend, separate frontend folder, Axios integration and Supabase configuration.
+                    </td>
+                    <td>15–22 September</td>
+                </tr>
+                <tr>
+                    <td>Deployment and API integration</td>
+                    <td>Render deployment fixes, CORS/authentication/API updates, and event image upload.</td>
+                    <td>29 September–1 October</td>
+                </tr>
+                <tr>
+                    <td>Payments and deployment automation</td>
+                    <td>PayFast subscription payments, Supabase Storage, service tests and automatic Render
+                        deployment.
+                    </td>
+                    <td>5–7 October</td>
+                </tr>
+                <tr>
+                    <td>Event management and images</td>
+                    <td>Local event images, image fallbacks, organiser event creation and dashboard updates.</td>
+                    <td>19–22 October</td>
+                </tr>
+                <tr>
+                    <td>Stall fees and refunds</td>
+                    <td>Payment after approval, vendor cancellation and refund requests.</td>
+                    <td>23 October</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>04.1 Reflection</h3>
+        <div class="reflection reflection-space">
+            <p>Looking at the backlog as it was reconstructed from the repository, the order of work broadly made sense: a prototype first, then the backend and database, followed by deployment, payments and finally refinements to event management and stall fees. Each stage built on the one before it.</p>
+            <p>The weakness is that the backlog was reconstructed after the fact rather than maintained throughout the project. Without a visible, prioritised list, it was harder to see what was still outstanding, and important items such as stall fees after approval and refund requests were only delivered on 23 October. The moves from MySQL to Supabase and from Netlify to Render also changed the scope mid-project. Next time I would keep the backlog on a shared board from the start, reprioritise it at the beginning of each sprint, and record scope changes like these as backlog items so that their impact is visible to the whole team.</p>
+        </div>
+    </section>
+
+    <section class="section" id="sprint">
+        <div class="heading">
+            <div class="num">05</div>
+            <div>
+                <h2>Sprint Cadence and Repository Activity</h2>
+                <p class="sub">A dated summary of commits, not a reconstruction of sprint ceremonies.</p>
+            </div>
+        </div>
+        <div class="tablewrap">
+            <table>
+                <thead>
+                <tr>
+                    <th>Week starting</th>
+                    <th>Commits</th>
+                    <th>Recorded activity</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>17 August</td>
+                    <td>2</td>
+                    <td>Repository and prototype</td>
+                </tr>
+                <tr>
+                    <td>24 August</td>
+                    <td>0</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>31 August</td>
+                    <td>0</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>7 September</td>
+                    <td>0</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>14 September</td>
+                    <td>18</td>
+                    <td>Backend, UI redesign and integration</td>
+                </tr>
+                <tr>
+                    <td>21 September</td>
+                    <td>2</td>
+                    <td>Supabase configuration</td>
+                </tr>
+                <tr>
+                    <td>28 September</td>
+                    <td>31</td>
+                    <td>Frontend restructure and deployment fixes</td>
+                </tr>
+                <tr>
+                    <td>5 October</td>
+                    <td>16</td>
+                    <td>Payments, tests and automatic deployment</td>
+                </tr>
+                <tr>
+                    <td>12 October</td>
+                    <td>0</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>19 October</td>
+                    <td>22</td>
+                    <td>Images, security, event creation and stall fees</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="small">The logbook counts 91 commits across six branches and 15 pull requests merged into main. A
+            period with no commits means no Git activity was recorded; it does not prove that no other work took
+            place.</p>
+        <h3>05.1 Reflection</h3>
+        <div class="reflection reflection-space">
+            <p>We agreed on one-week sprints, but the repository activity shows that our work did not follow a steady weekly rhythm. There were no commits between 18 August and 14 September, or between 8 and 18 October, while other weeks were very busy, with 31 commits in the week of 28 September and 22 in the week of 19 October. This pattern suggests that our work was driven by deadlines and integration problems rather than by sprint goals.</p>
+            <p>A gap in Git activity does not mean that no work took place, as planning and design also happened outside the repository. However, because we did not record sprint plans, reviews or retrospectives, there is no evidence to show it. I have learned that the value of a sprint comes from its ceremonies as much as its duration. A short written sprint goal and a brief retrospective each week would have spread the workload more evenly and helped us identify problems, such as deployment issues, much earlier.</p>
+        </div>
+    </section>
+
+    <section class="section" id="testing">
+        <div class="heading">
+            <div class="num">06</div>
+            <div>
+                <h2>Testing and Evidence Register</h2>
+            </div>
+        </div>
+        <div class="tablewrap">
+            <table>
+                <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Backend test files recorded</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>15 September</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>16 September</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>30 September</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>22 October</td>
+                    <td>15</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <ul>
+            <li>A signature test was added with PayFast subscription payments on 5 October.</li>
+            <li>A Mockito test was added with Supabase Storage and service updates on 7 October.</li>
+            <li>Payment gateway code was reorganised and a test was added on 22 October.</li>
+        </ul>
+    </section>
+
+    <section class="section" id="logbook">
+        <div class="heading">
+            <div class="num">07</div>
+            <div>
+                <h2>Agile Logbook</h2>
+                <p class="sub">Dated project activity from the repository record.</p>
+            </div>
+        </div>
+        <div class="tablewrap">
+            <table>
+                <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Activity and contributor</th>
+                    <th>Outcome recorded</th>
+                    <th>Commit evidence</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>17 August 2026</td>
+                    <td>
+                        <strong>Repository set up, first prototype and README</strong><br><span class="small">Recorded contributor: Will Koeries</span>
+                    </td>
+                    <td>Eight static HTML pages, seven stylesheets and an images folder were committed. The README
+                        described the problem, planned features and technology. Several initial image files did not
+                        contain usable image data.
+                    </td>
+                    <td>
+                        <a href="https://github.com/WillKoeries/VendorLink/commit/2d890ab" target="_blank"
+                           rel="noopener noreferrer">2d890ab</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/8742d72" target="_blank"
+                            rel="noopener noreferrer">8742d72</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>18 August–14 September 2026</td>
+                    <td>
+                        <strong>N/A</strong><br><span
+                            class="small">Recorded contributor: —</span>
+                    </td>
+                    <td>No commits were found on any branch during this 28-day period.</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>15–17 September 2026</td>
+                    <td>
+                        <strong>Backend built and project split into Backend and Frontend folders</strong><br><span
+                            class="small">Recorded contributor: Wazeer</span>
+                    </td>
+                    <td>Spring Boot backend structure, controller code and early tests were added. The work was merged
+                        through pull requests #5 and #6. Six backend test files were present by 16 September.
+                    </td>
+                    <td>
+                        <a href="https://github.com/WillKoeries/VendorLink/commit/8f49603" target="_blank"
+                           rel="noopener noreferrer">8f49603</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/3ae316d" target="_blank"
+                            rel="noopener noreferrer">3ae316d</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/9c23064" target="_blank"
+                            rel="noopener noreferrer">9c23064</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/424dff2" target="_blank"
+                            rel="noopener noreferrer">424dff2</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/ffe5f74" target="_blank"
+                            rel="noopener noreferrer">ffe5f74</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>16 September 2026</td>
+                    <td>
+                        <strong>UI redesign merged from the Tshegofatso branch</strong><br><span class="small">Recorded contributor: Tshegofatso Hlabela</span>
+                    </td>
+                    <td>A redesign covering the project pages and stylesheets was merged through pull request #2.
+                        Several branch commits used the generic Git author name “Your Name”.
+                    </td>
+                    <td>
+                        <a href="https://github.com/WillKoeries/VendorLink/commit/b024776" target="_blank"
+                           rel="noopener noreferrer">b024776</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/95d4b24" target="_blank"
+                            rel="noopener noreferrer">95d4b24</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/5b56d94" target="_blank"
+                            rel="noopener noreferrer">5b56d94</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>17–22 September 2026</td>
+                    <td>
+                        <strong>Frontend connected to backend; database changed from MySQL to Supabase</strong><br><span
+                            class="small">Recorded contributor: Wazeer</span>
+                    </td>
+                    <td>The frontend was connected using Axios, Supabase settings were configured, and repeated merges
+                        were used to keep branches in sync. An image-loading fix remained on its branch and was not
+                        merged.
+                    </td>
+                    <td>
+                        <a href="https://github.com/WillKoeries/VendorLink/commit/0ba14ae" target="_blank"
+                           rel="noopener noreferrer">0ba14ae</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/3db878b" target="_blank"
+                            rel="noopener noreferrer">3db878b</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/8fb3df8" target="_blank"
+                            rel="noopener noreferrer">8fb3df8</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/7960933" target="_blank"
+                            rel="noopener noreferrer">7960933</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>29–30 September 2026</td>
+                    <td>
+                        <strong>Netlify attempt and Render setup</strong><br><span class="small">Recorded contributor: Not recorded</span>
+                    </td>
+                    <td>The Netlify deployment failed because its base directory was incorrect. An automated fix branch
+                        was not merged. A Render Dockerfile was added the next day.
+                    </td>
+                    <td>
+                        <a href="https://github.com/WillKoeries/VendorLink/commit/ddb14b7" target="_blank"
+                           rel="noopener noreferrer">ddb14b7</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/8a294b0" target="_blank"
+                            rel="noopener noreferrer">8a294b0</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>30 September 2026</td>
+                    <td>
+                        <strong>Frontend reorganised</strong><br><span
+                            class="small">Recorded contributor: Will Koeries</span>
+                    </td>
+                    <td>The frontend was split into shared layout, UI helpers, data models, demo data and page scripts.
+                        Vendor dashboard and legal pages were added. Backend integration fixes and service tests were
+                        also recorded.
+                    </td>
+                    <td>
+                        <a href="https://github.com/WillKoeries/VendorLink/commit/fe5b9bf" target="_blank"
+                           rel="noopener noreferrer">fe5b9bf</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/e586ab9" target="_blank"
+                            rel="noopener noreferrer">e586ab9</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/04a9c42" target="_blank"
+                            rel="noopener noreferrer">04a9c42</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1 October 2026</td>
+                    <td>
+                        <strong>Render deployment and integration fixes</strong><br><span class="small">Recorded contributor: Wazeer</span>
+                    </td>
+                    <td>Nineteen commits addressed CORS, frontend/backend synchronisation, authentication, API routes,
+                        event image upload, and application, profile and notification services. The main frontend
+                        services were connected to the API by day end.
+                    </td>
+                    <td>
+                        <a href="https://github.com/WillKoeries/VendorLink/commit/242d5d1" target="_blank"
+                           rel="noopener noreferrer">242d5d1</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/b2f6e1c" target="_blank"
+                            rel="noopener noreferrer">b2f6e1c</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/4095133" target="_blank"
+                            rel="noopener noreferrer">4095133</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/6dca8ba" target="_blank"
+                            rel="noopener noreferrer">6dca8ba</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/db979f1" target="_blank"
+                            rel="noopener noreferrer">db979f1</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/0e27019" target="_blank"
+                            rel="noopener noreferrer">0e27019</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5–7 October 2026</td>
+                    <td>
+                        <strong>PayFast payments, storage, tests and automatic deployment</strong><br><span
+                            class="small">Recorded contributor: Wazeer</span>
+                    </td>
+                    <td>PayFast subscription payments, Supabase Storage and an automatic Render deployment workflow were
+                        added. The applications service was connected to the API.
+                    </td>
+                    <td>
+                        <a href="https://github.com/WillKoeries/VendorLink/commit/3aa42c1" target="_blank"
+                           rel="noopener noreferrer">3aa42c1</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/16fee6a" target="_blank"
+                            rel="noopener noreferrer">16fee6a</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/1e5d33f" target="_blank"
+                            rel="noopener noreferrer">1e5d33f</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/dbab6e2" target="_blank"
+                            rel="noopener noreferrer">dbab6e2</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/991a23e" target="_blank"
+                            rel="noopener noreferrer">991a23e</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8–18 October 2026</td>
+                    <td>
+                        <strong>N/A</strong><br><span
+                            class="small">Recorded contributor: —</span>
+                    </td>
+                    <td>No commits were found on any branch during this 11-day period.</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>19 October 2026</td>
+                    <td>
+                        <strong>Event images moved into the frontend</strong><br><span class="small">Recorded contributor: Will Koeries</span>
+                    </td>
+                    <td>Twelve local event images were added and sample data was updated. The images were copied into
+                        the backend static folder on 22 October.
+                    </td>
+                    <td>
+                        <a href="https://github.com/WillKoeries/VendorLink/commit/062d8b0" target="_blank"
+                           rel="noopener noreferrer">062d8b0</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/ddc230c" target="_blank"
+                            rel="noopener noreferrer">ddc230c</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>22 October 2026</td>
+                    <td>
+                        <strong>Security, event creation and dashboard updates</strong><br><span class="small">Recorded contributor: Wazeer; footer update by Will Koeries</span>
+                    </td>
+                    <td>Payment and security workflows were hardened, payment gateway code was reorganised, an organiser
+                        event-creation page was added, and dashboard notifications and image fallbacks were updated. The
+                        footer change had to be repeated across two frontend copies.
+                    </td>
+                    <td>
+                        <a href="https://github.com/WillKoeries/VendorLink/commit/9594272" target="_blank"
+                           rel="noopener noreferrer">9594272</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/71773dc" target="_blank"
+                            rel="noopener noreferrer">71773dc</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/4dd6bae" target="_blank"
+                            rel="noopener noreferrer">4dd6bae</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/8210d2c" target="_blank"
+                            rel="noopener noreferrer">8210d2c</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/658ee34" target="_blank"
+                            rel="noopener noreferrer">658ee34</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>23 October 2026</td>
+                    <td>
+                        <strong>Stall fees and refund requests</strong><br><span class="small">Recorded contributor: Wazeer</span>
+                    </td>
+                    <td>A stall fee was added after organiser approval, with cancellation and refund requests for
+                        approved vendors. The recorded flow waits for PayFast confirmation before marking payment as
+                        paid; free events are marked as not requiring payment.
+                    </td>
+                    <td>
+                        <a href="https://github.com/WillKoeries/VendorLink/commit/809ec1d" target="_blank"
+                           rel="noopener noreferrer">809ec1d</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/8308a04" target="_blank"
+                            rel="noopener noreferrer">8308a04</a>, <a
+                            href="https://github.com/WillKoeries/VendorLink/commit/7ed88c6" target="_blank"
+                            rel="noopener noreferrer">7ed88c6</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>07.1 Reflection</h3>
+        <div class="reflection reflection-space">
+            <p>Compiling the Agile Logbook from the repository history was a valuable exercise because it showed me our project as an outside reviewer would see it. The commit links provide clear, verifiable evidence of when features were added and by whom, and the pull request record shows that much of the backend work was merged in a structured way.</p>
+            <p>The process also exposed gaps in our record-keeping. Some commits used the generic author name “Your Name”, the contributor for the Netlify and Render setup could not be identified, and commit messages did not always describe the change clearly. Because the logbook was compiled from the repository rather than kept up to date as we worked, I had to infer some context from the code changes themselves. In future I would update the logbook at the end of each sprint, ensure every team member uses consistent Git author settings, and write descriptive commit messages that reference the relevant user story.</p>
+        </div>
+    </section>
+
+    <section class="section" id="reflection">
+        <div class="heading">
+            <div class="num">08</div>
+            <div>
+                <h2>Individual Reflection</h2>
+            </div>
+        </div>
+
+        <div class="reflection reflection-space">
+            <h4>My contribution</h4>
+            <p>My main role on VendorLink was frontend development. I set up the repository on 17 August with the first static prototype and a README describing the problem, planned features and technology. On 30 September I restructured the frontend into shared layout, UI helper, data model, demo data and page script files, and added the vendor dashboard and legal pages. Later I added twelve local event images with updated sample data, updated the site footer, and compiled the Agile Logbook and this portfolio from the repository record.</p>
+            <h4>What went well</h4>
+            <p>Restructuring the frontend is the contribution I am most satisfied with. Separating the shared layout and helpers from page-specific scripts made the pages easier to maintain and simpler to connect to the backend API once those services were ready. Working alongside a backend developer also helped me understand how much the frontend depends on authentication, CORS configuration and consistent API responses, which were areas I had not dealt with in depth before this project.</p>
+            <h4>What I would do differently</h4>
+            <p>I would start integrating with the backend much earlier. The early prototype was built as static pages, and some of its initial image files did not contain usable image data, which led to rework later. Because integration happened late, a large number of fixes were concentrated around 1 October. I would also ensure there is only one copy of the frontend in the repository: keeping files in both the Frontend folder and the backend static folder meant that changes, such as the footer update, had to be made twice. Finally, I would commit smaller changes more regularly and route them through pull requests.</p>
+            <h4>What I learned</h4>
+            <p>This project showed me that Agile practices are only effective when they are applied consistently. Choosing a sprint length is easy; maintaining a visible backlog, recording decisions and reflecting regularly takes discipline. I also gained practical experience with Git branching and pull requests, deploying to Render, and working with a payment gateway in a sandbox environment. In my next project I will set up a task board in the first week, agree a definition of done with my team, and treat documentation as part of the work rather than something completed at the end.</p>
+        </div>
+    </section>
+
+    <section class="section" id="risks">
+        <div class="heading">
+            <div class="num">09</div>
+            <div>
+                <h2>Challenges and Lessons</h2>
+                <p class="sub">Challenges visible in the project record.</p>
+            </div>
+        </div>
+        <div class="tablewrap">
+            <table>
+                <thead><tr><th>Recorded challenge</th></tr></thead>
+                <tbody>
+                <tr><td>Deployment and integration fixes clustered on 1 October, about six weeks after the repository was created.</td></tr>
+                <tr><td>Frontend files were kept in both the Frontend folder and the backend static folder.</td></tr>
+                <tr><td>Some commits used a generic author name, and one large frontend update went directly to main.</td></tr>
+                <tr><td>No dated sprint plans, reviews, retrospectives or task-board updates appear in the repository log.</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <h3>09.1 Reflection</h3>
+        <div class="reflection reflection-space">
+            <p>The challenges recorded in this project stem mostly from integration and process rather than from any single technical problem. Leaving deployment and integration until late meant that issues with CORS, authentication and API routes all surfaced at once, and the repeated Render deployment-failure notifications show how much time was spent stabilising the build. Deploying a simple end-to-end feature early in the project would have exposed these problems while they were still small.</p>
+            <p>Keeping two copies of the frontend created duplicate work and the risk that the versions would drift apart, while inconsistent Git author names reduced the traceability of our contributions. The absence of sprint documentation also made it harder to demonstrate our Agile process. The main lesson I take from these challenges is that small, consistent habits, such as early integration, a single source of truth for the code, a clear commit history and brief written sprint records, prevent problems that are much harder to fix later.</p>
+        </div>
+    </section>
+
+    <section class="section" id="submission">
+        <div class="heading">
+            <div class="num">10</div>
+            <div>
+                <h2>Project Evidence</h2>
+                <p class="sub">Repository links and screenshots from the VendorLink project.</p>
+            </div>
+        </div>
+        <ul>
+            <li><a href="https://github.com/WillKoeries/VendorLink" target="_blank" rel="noopener noreferrer">VendorLink
+                source repository</a></li>
+            <li><a href="https://github.com/WillKoeries/VendorLink/commits/main" target="_blank"
+                   rel="noopener noreferrer">Main-branch commit history</a></li>
+            <li><a href="https://github.com/WillKoeries/VendorLink/pulls?q=is%3Apr+is%3Amerged" target="_blank"
+                   rel="noopener noreferrer">Merged pull requests</a></li>
+            <li><a href="https://vendorlink-1vla.onrender.com/" target="_blank" rel="noopener noreferrer">VendorLink
+                application URL</a></li>
+        </ul>
+        <p class="small">These screenshots document project screens and demo flows. PayFast screenshots are labeled as sandbox pages.</p>
+        <div class="evidence-gallery" aria-label="VendorLink screenshots">
+            <figure class="evidence-shot" data-caption="Event creation form with event details and description fields.">
+                <a href="./assets/evidence/2026-10-26-21-43-04.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-26-21-43-04.jpg" alt="Event creation form with event details and description fields." loading="lazy">
+                </a>
+                <figcaption>Event creation form with event details and description fields. · <a href="./assets/evidence/2026-10-26-21-43-04.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Event creation form with date, time and location fields.">
+                <a href="./assets/evidence/2026-10-26-21-45-30.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-26-21-45-30.jpg" alt="Event creation form with date, time and location fields." loading="lazy">
+                </a>
+                <figcaption>Event creation form with date, time and location fields. · <a href="./assets/evidence/2026-10-26-21-45-30.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Event creation form with trading requirements and banner upload.">
+                <a href="./assets/evidence/2026-10-26-21-45-39.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-26-21-45-39.jpg" alt="Event creation form with trading requirements and banner upload." loading="lazy">
+                </a>
+                <figcaption>Event creation form with trading requirements and banner upload. · <a href="./assets/evidence/2026-10-26-21-45-39.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Organizer dashboard with summary cards and an upcoming event.">
+                <a href="./assets/evidence/2026-10-27-09-53-01.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-09-53-01.jpg" alt="Organizer dashboard with summary cards and an upcoming event." loading="lazy">
+                </a>
+                <figcaption>Organizer dashboard with summary cards and an upcoming event. · <a href="./assets/evidence/2026-10-27-09-53-01.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Organizer dashboard with upcoming events and notifications.">
+                <a href="./assets/evidence/2026-10-27-09-53-09.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-09-53-09.jpg" alt="Organizer dashboard with upcoming events and notifications." loading="lazy">
+                </a>
+                <figcaption>Organizer dashboard with upcoming events and notifications. · <a href="./assets/evidence/2026-10-27-09-53-09.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Event creation page showing a selected banner image.">
+                <a href="./assets/evidence/2026-10-27-09-58-25.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-09-58-25.jpg" alt="Event creation page showing a selected banner image." loading="lazy">
+                </a>
+                <figcaption>Event creation page showing a selected banner image. · <a href="./assets/evidence/2026-10-27-09-58-25.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Completed event details in the event creation form.">
+                <a href="./assets/evidence/2026-10-27-09-59-45.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-09-59-45.jpg" alt="Completed event details in the event creation form." loading="lazy">
+                </a>
+                <figcaption>Completed event details in the event creation form. · <a href="./assets/evidence/2026-10-27-09-59-45.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Confirmation that the event was created and published.">
+                <a href="./assets/evidence/2026-10-27-09-59-55.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-09-59-55.jpg" alt="Confirmation that the event was created and published." loading="lazy">
+                </a>
+                <figcaption>Confirmation that the event was created and published. · <a href="./assets/evidence/2026-10-27-09-59-55.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Organizer event list with event status and management actions.">
+                <a href="./assets/evidence/2026-10-27-10-00-08.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-10-00-08.jpg" alt="Organizer event list with event status and management actions." loading="lazy">
+                </a>
+                <figcaption>Organizer event list with event status and management actions. · <a href="./assets/evidence/2026-10-27-10-00-08.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Organizer applications list showing application decisions.">
+                <a href="./assets/evidence/2026-10-27-10-00-21.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-10-00-21.jpg" alt="Organizer applications list showing application decisions." loading="lazy">
+                </a>
+                <figcaption>Organizer applications list showing application decisions. · <a href="./assets/evidence/2026-10-27-10-00-21.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Organizer dashboard showing updated event and application counts.">
+                <a href="./assets/evidence/2026-10-27-10-04-57.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-10-04-57.jpg" alt="Organizer dashboard showing updated event and application counts." loading="lazy">
+                </a>
+                <figcaption>Organizer dashboard showing updated event and application counts. · <a href="./assets/evidence/2026-10-27-10-04-57.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Public event page with event banner, details and stall fee.">
+                <a href="./assets/evidence/2026-10-27-10-06-28.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-10-06-28.jpg" alt="Public event page with event banner, details and stall fee." loading="lazy">
+                </a>
+                <figcaption>Public event page with event banner, details and stall fee. · <a href="./assets/evidence/2026-10-27-10-06-28.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Public event information, trading requirements and stall application panel.">
+                <a href="./assets/evidence/2026-10-27-10-06-40.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-10-06-40.jpg" alt="Public event information, trading requirements and stall application panel." loading="lazy">
+                </a>
+                <figcaption>Public event information, trading requirements and stall application panel. · <a href="./assets/evidence/2026-10-27-10-06-40.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Public event page showing trading requirements and organizer details.">
+                <a href="./assets/evidence/2026-10-27-10-06-46.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-10-06-46.jpg" alt="Public event page showing trading requirements and organizer details." loading="lazy">
+                </a>
+                <figcaption>Public event page showing trading requirements and organizer details. · <a href="./assets/evidence/2026-10-27-10-06-46.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Vendor application form for a stall, including business and product details.">
+                <a href="./assets/evidence/2026-10-27-10-14-57.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-10-14-57.jpg" alt="Vendor application form for a stall, including business and product details." loading="lazy">
+                </a>
+                <figcaption>Vendor application form for a stall, including business and product details. · <a href="./assets/evidence/2026-10-27-10-14-57.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Public event details with available stall information.">
+                <a href="./assets/evidence/2026-10-27-10-15-12.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-10-15-12.jpg" alt="Public event details with available stall information." loading="lazy">
+                </a>
+                <figcaption>Public event details with available stall information. · <a href="./assets/evidence/2026-10-27-10-15-12.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Vendor application list with application and payment statuses.">
+                <a href="./assets/evidence/2026-10-27-10-15-21.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-10-15-21.jpg" alt="Vendor application list with application and payment statuses." loading="lazy">
+                </a>
+                <figcaption>Vendor application list with application and payment statuses. · <a href="./assets/evidence/2026-10-27-10-15-21.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Organizer dashboard with application notifications.">
+                <a href="./assets/evidence/2026-10-27-10-16-11.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-10-16-11.jpg" alt="Organizer dashboard with application notifications." loading="lazy">
+                </a>
+                <figcaption>Organizer dashboard with application notifications. · <a href="./assets/evidence/2026-10-27-10-16-11.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Organizer review dialog for a vendor application.">
+                <a href="./assets/evidence/2026-10-27-10-16-21.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-10-16-21.jpg" alt="Organizer review dialog for a vendor application." loading="lazy">
+                </a>
+                <figcaption>Organizer review dialog for a vendor application. · <a href="./assets/evidence/2026-10-27-10-16-21.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Application row showing an approved application with a fee due.">
+                <a href="./assets/evidence/2026-10-27-10-17-21.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-10-17-21.jpg" alt="Application row showing an approved application with a fee due." loading="lazy">
+                </a>
+                <figcaption>Application row showing an approved application with a fee due. · <a href="./assets/evidence/2026-10-27-10-17-21.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Organizer dashboard with application totals, upcoming events and notifications.">
+                <a href="./assets/evidence/2026-10-27-10-21-44.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-10-21-44.jpg" alt="Organizer dashboard with application totals, upcoming events and notifications." loading="lazy">
+                </a>
+                <figcaption>Organizer dashboard with application totals, upcoming events and notifications. · <a href="./assets/evidence/2026-10-27-10-21-44.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Vendor application list showing event applications and their statuses.">
+                <a href="./assets/evidence/2026-10-27-10-21-58.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-10-21-58.jpg" alt="Vendor application list showing event applications and their statuses." loading="lazy">
+                </a>
+                <figcaption>Vendor application list showing event applications and their statuses. · <a href="./assets/evidence/2026-10-27-10-21-58.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Vendor application list with approval, cancellation and payment states.">
+                <a href="./assets/evidence/2026-10-27-10-22-03.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-10-22-03.jpg" alt="Vendor application list with approval, cancellation and payment states." loading="lazy">
+                </a>
+                <figcaption>Vendor application list with approval, cancellation and payment states. · <a href="./assets/evidence/2026-10-27-10-22-03.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Vendor application list showing payment progress.">
+                <a href="./assets/evidence/2026-10-27-10-22-12.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-10-22-12.jpg" alt="Vendor application list showing payment progress." loading="lazy">
+                </a>
+                <figcaption>Vendor application list showing payment progress. · <a href="./assets/evidence/2026-10-27-10-22-12.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="PayFast sandbox checkout for a VendorLink stall fee.">
+                <a href="./assets/evidence/2026-10-27-10-22-23.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-10-22-23.jpg" alt="PayFast sandbox checkout for a VendorLink stall fee." loading="lazy">
+                </a>
+                <figcaption>PayFast sandbox checkout for a VendorLink stall fee. · <a href="./assets/evidence/2026-10-27-10-22-23.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Vendor application card showing approved and paid statuses.">
+                <a href="./assets/evidence/2026-10-27-10-23-43.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-10-23-43.jpg" alt="Vendor application card showing approved and paid statuses." loading="lazy">
+                </a>
+                <figcaption>Vendor application card showing approved and paid statuses. · <a href="./assets/evidence/2026-10-27-10-23-43.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Public event page with stall availability and application actions.">
+                <a href="./assets/evidence/2026-10-27-10-24-45.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-10-24-45.jpg" alt="Public event page with stall availability and application actions." loading="lazy">
+                </a>
+                <figcaption>Public event page with stall availability and application actions. · <a href="./assets/evidence/2026-10-27-10-24-45.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Organizer dashboard with event, application and notification summaries.">
+                <a href="./assets/evidence/2026-10-27-16-18-28.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-16-18-28.jpg" alt="Organizer dashboard with event, application and notification summaries." loading="lazy">
+                </a>
+                <figcaption>Organizer dashboard with event, application and notification summaries. · <a href="./assets/evidence/2026-10-27-16-18-28.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Organizer dashboard showing upcoming events and application activity.">
+                <a href="./assets/evidence/2026-10-27-16-21-01.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-16-21-01.jpg" alt="Organizer dashboard showing upcoming events and application activity." loading="lazy">
+                </a>
+                <figcaption>Organizer dashboard showing upcoming events and application activity. · <a href="./assets/evidence/2026-10-27-16-21-01.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Organizer dashboard with event and application summary cards.">
+                <a href="./assets/evidence/2026-10-27-16-26-39.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-16-26-39.jpg" alt="Organizer dashboard with event and application summary cards." loading="lazy">
+                </a>
+                <figcaption>Organizer dashboard with event and application summary cards. · <a href="./assets/evidence/2026-10-27-16-26-39.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Organizer applications table showing decisions and payment status.">
+                <a href="./assets/evidence/2026-10-27-16-27-16.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-16-27-16.jpg" alt="Organizer applications table showing decisions and payment status." loading="lazy">
+                </a>
+                <figcaption>Organizer applications table showing decisions and payment status. · <a href="./assets/evidence/2026-10-27-16-27-16.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="PayFast sandbox checkout showing the R400 stall fee.">
+                <a href="./assets/evidence/2026-10-27-16-28-33.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-16-28-33.jpg" alt="PayFast sandbox checkout showing the R400 stall fee." loading="lazy">
+                </a>
+                <figcaption>PayFast sandbox checkout showing the R400 stall fee. · <a href="./assets/evidence/2026-10-27-16-28-33.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="PayFast sandbox page showing a cancelled stall-fee payment.">
+                <a href="./assets/evidence/2026-10-27-16-28-40.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-16-28-40.jpg" alt="PayFast sandbox page showing a cancelled stall-fee payment." loading="lazy">
+                </a>
+                <figcaption>PayFast sandbox page showing a cancelled stall-fee payment. · <a href="./assets/evidence/2026-10-27-16-28-40.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Vendor applications page after payment, with a confirmation notification.">
+                <a href="./assets/evidence/2026-10-27-16-28-46.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-16-28-46.jpg" alt="Vendor applications page after payment, with a confirmation notification." loading="lazy">
+                </a>
+                <figcaption>Vendor applications page after payment, with a confirmation notification. · <a href="./assets/evidence/2026-10-27-16-28-46.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Organizer applications list with vendor decisions and payment states.">
+                <a href="./assets/evidence/2026-10-27-16-29-32.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-16-29-32.jpg" alt="Organizer applications list with vendor decisions and payment states." loading="lazy">
+                </a>
+                <figcaption>Organizer applications list with vendor decisions and payment states. · <a href="./assets/evidence/2026-10-27-16-29-32.jpg">Open full size</a></figcaption>
+            </figure>
+            <figure class="evidence-shot" data-caption="Email inbox showing repeated Render deployment-failure notifications.">
+                <a href="./assets/evidence/2026-10-27-17-12-08.jpg" aria-label="Open screenshot in full size">
+                    <img src="./assets/evidence/2026-10-27-17-12-08.jpg" alt="Email inbox showing repeated Render deployment-failure notifications." loading="lazy">
+                </a>
+                <figcaption>Email inbox showing repeated Render deployment-failure notifications. · <a href="./assets/evidence/2026-10-27-17-12-08.jpg">Open full size</a></figcaption>
+            </figure>
+        </div>
+    </section>
+</main>
+<footer class="footer">VendorLink · PRP370 Agile Project Portfolio · 2026<br><a href="#top">Return to top ↑</a></footer>
+
+<dialog class="image-viewer" id="image-viewer" aria-labelledby="viewer-caption">
+    <div class="viewer-toolbar">
+        <p id="viewer-position" aria-live="polite"></p>
+        <button class="viewer-button" id="viewer-close" type="button">Close</button>
+    </div>
+    <div class="viewer-stage">
+        <button class="viewer-button" id="viewer-previous" type="button" aria-label="Previous image">← Previous</button>
+        <figure>
+            <img id="viewer-image" src="" alt="">
+            <figcaption id="viewer-caption"></figcaption>
+        </figure>
+        <button class="viewer-button" id="viewer-next" type="button" aria-label="Next image">Next →</button>
+    </div>
+</dialog>
+<script>
+(() => {
+    const dialog = document.getElementById('image-viewer');
+    const figures = [...document.querySelectorAll('.evidence-shot')];
+    if (!dialog || typeof dialog.showModal !== 'function' || figures.length === 0) return;
+
+    const image = document.getElementById('viewer-image');
+    const caption = document.getElementById('viewer-caption');
+    const position = document.getElementById('viewer-position');
+    let current = 0;
+    let returnFocus = null;
+
+    function show(index) {
+        current = (index + figures.length) % figures.length;
+        const figure = figures[current];
+        const thumbnail = figure.querySelector('img');
+        image.src = thumbnail.currentSrc || thumbnail.src;
+        image.alt = thumbnail.alt;
+        caption.textContent = figure.dataset.caption;
+        position.textContent = `${current + 1} of ${figures.length}`;
+    }
+
+    figures.forEach((figure, index) => {
+        figure.querySelectorAll('a[href$=".jpg"]').forEach(link => {
+            link.addEventListener('click', event => {
+                event.preventDefault();
+                returnFocus = link;
+                show(index);
+                dialog.showModal();
+                document.getElementById('viewer-next').focus();
+            });
+        });
+    });
+
+    document.getElementById('viewer-previous').addEventListener('click', () => show(current - 1));
+    document.getElementById('viewer-next').addEventListener('click', () => show(current + 1));
+    document.getElementById('viewer-close').addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+    dialog.addEventListener('close', () => { if (returnFocus) returnFocus.focus(); });
+    document.addEventListener('keydown', event => {
+        if (!dialog.open) return;
+        if (event.key === 'ArrowLeft') { event.preventDefault(); show(current - 1); }
+        if (event.key === 'ArrowRight') { event.preventDefault(); show(current + 1); }
+    });
+})();
+</script>
+</body>
+</html>
